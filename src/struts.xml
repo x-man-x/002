@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+    <!-- 指定全局国际化资源文件 -->
+    <constant name="struts.custom.i18n.resources" value="mess"/>
+    <!-- 指定国际化编码所使用的字符集 -->    
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.multipart.maxSize" value="1073741824"/>  
+    <constant name="struts.devMode" value="false"/> 
+    <constant name="struts.action.extension" value=","/> 
+  	<constant name="struts.objectFactory" value="spring" />
+    
+    <!-- 所有的Action定义都应该放在package下 -->
+    <package name="test" extends="struts-default,json-default">
+    
+    	<action name="wx" class="CheckSignatureAction">
+            <result type="stream">  
+	            <param name="contentType">text/html</param>  
+	            <param name="inputName">inputStream</param>  
+        	</result>  
+             
+        </action>
+        
+        <action name="Login" class="LoginAction">
+            <result name="error">/error.jsp</result>
+            <result name="success">/welcome.jsp</result>
+        </action>
+        
+     <action name="Approve" class="LoginAction">
+            <result type="json">
+             <param name="root">dataMap</param> 
+             </result> 
+        </action>
+        
+        <action name="Open" class="OpenAction" >
+        	 <result name="success"  type="redirect">/main.jsp</result>
+        	 <result name="error"  type="redirect">/index.jsp</result>
+        </action>
+        
+         <action name="getAward" class="getAwardAction">
+            <result type="json">
+             <param name="root">dataMap</param>  
+             </result>
+        </action>
+        
+         <action name="Share" class="ShareAction">
+            <result type="json">
+             <param name="root">dataMap</param>  
+             </result>
+        </action> 
+    
+        
+        
+    </package>
+
+
+</struts>    
