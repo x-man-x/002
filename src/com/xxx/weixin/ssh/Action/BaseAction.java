@@ -15,7 +15,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.xxx.weixin.ssh.Model.Token;
 import com.xxx.weixin.ssh.Model.WxMpAccessToken;
-import com.xxx.weixin.ssh.util.HttpRequest;
+import com.xxx.weixin.ssh.Util.HttpRequest;
 
 public class BaseAction extends ActionSupport implements ServletRequestAware,ServletResponseAware,SessionAware,ApplicationAware{
 	private static final long serialVersionUID = 1348913248;
@@ -28,9 +28,6 @@ public class BaseAction extends ActionSupport implements ServletRequestAware,Ser
     protected Map<String, Object> session;  
     protected Map<String, Object> application;
     
-   
-    
-
 
 	public Token getToken() {
 		return this.token;
