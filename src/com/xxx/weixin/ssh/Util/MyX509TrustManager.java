@@ -1,4 +1,4 @@
-package com.xxx.weixin.ssh.util;
+package com.xxx.weixin.ssh.Util;
 
 
 import java.security.cert.CertificateException;
