@@ -16,8 +16,8 @@ import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
 
 import com.xxx.weixin.ssh.Model.Token;
-import com.xxx.weixin.ssh.util.CommonUtil;
-import com.xxx.weixin.ssh.util.HttpRequest;
+import com.xxx.weixin.ssh.Util.CommonUtil;
+import com.xxx.weixin.ssh.Util.HttpRequest;
 
 public class WxGetToken {
 	 private static Logger log = LoggerFactory.getLogger(CommonUtil.class);

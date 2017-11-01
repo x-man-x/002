@@ -17,8 +17,8 @@ import com.xxx.weixin.ssh.DAO.WxUserInfoDAO;
 import com.xxx.weixin.ssh.Model.Token;
 import com.xxx.weixin.ssh.Model.User;
 import com.xxx.weixin.ssh.Model.WxUserInfo;
-import com.xxx.weixin.ssh.util.CommonUtil;
-import com.xxx.weixin.ssh.util.HttpRequest;
+import com.xxx.weixin.ssh.Util.CommonUtil;
+import com.xxx.weixin.ssh.Util.HttpRequest;
 
 public class ShareAction extends BaseAction {
 	

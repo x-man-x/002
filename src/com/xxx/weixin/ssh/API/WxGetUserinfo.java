@@ -1,7 +1,7 @@
 package com.xxx.weixin.ssh.API;
 
 import com.xxx.weixin.ssh.Model.WxUserInfo;
-import com.xxx.weixin.ssh.util.CommonUtil;
+import com.xxx.weixin.ssh.Util.CommonUtil;
 
 import net.sf.json.JSONObject;
 

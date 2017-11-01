@@ -12,7 +12,7 @@ import com.xxx.weixin.ssh.DAO.AwardsLogsDAO;
 import com.xxx.weixin.ssh.DAO.UserDAO;
 import com.xxx.weixin.ssh.Model.AwardsLogs;
 import com.xxx.weixin.ssh.Model.User;
-import com.xxx.weixin.ssh.util.PropertiesDB;
+import com.xxx.weixin.ssh.Util.PropertiesDB;
 
 public class LoginAction extends BaseAction {
     /**

@@ -39,8 +39,6 @@ public class CheckSignatureAction extends BaseAction {
     // 随机字符串
     public String echostr;
     
-	
-
 	public String getSignature() {
 		return signature;
 	}

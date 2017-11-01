@@ -16,4 +16,5 @@ public class Awards extends AbstractAwards implements java.io.Serializable {
 		super(awardId, nums, description);
 	}
 
+	
 }
